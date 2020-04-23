@@ -1,0 +1,328 @@
+/* 
+** Author: Abdallah Mohammed
+** Theme: Free Video
+** Version: 1.0.0
+*/
+
+
+/* ---------------------------------- Global ----- */
+body {
+  font-family: 'Signika', sans-serif;
+  background: #171941;
+}
+
+/* Class Bootstrap */
+.front-page .container {
+  min-height: 100vh;
+}
+
+/* Dots Background */
+.dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.dots span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  background-color: #007bff;
+}
+
+.dots span:nth-of-type(1) {
+  top: -5rem;
+  right: 30rem;
+  width: 200px;
+  height: 200px;
+  opacity: .3;
+  background: url('/assets/images/square2.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(2) {
+  top: 9rem;
+  right: 3rem;
+  width: 70px;
+  height: 70px;
+  opacity: .8;
+  background: url('/assets/images/square1.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(3) {
+  top: 15rem;
+  right: 10rem;
+  width: 300px;
+  height: 300px;
+  opacity: .8;
+  background: url('/assets/images/square1.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(4) {
+  top: 23rem;
+  right: 26rem;
+  width: 120px;
+  height: 120px;
+  opacity: .8;
+  background: url('/assets/images/square1.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(5) {
+  top: 37rem;
+  right: -3rem;
+  width: 200px;
+  height: 200px;
+  opacity: .8;
+  background: url('/assets/images/square2.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(6) {
+  top: 40rem;
+  right: 30rem;
+  width: 150px;
+  height: 150px;
+  opacity: .8;
+  background: url('/assets/images/square2.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(7) {
+  top: 20rem;
+  left: 20rem;
+  width: 200px;
+  height: 200px;
+  opacity: .8;
+  background: url('/assets/images/square1.png') center / cover no-repeat;
+}
+
+.dots span:nth-of-type(8) {
+  top: 46rem;
+  left: 2rem;
+  width: 150px;
+  height: 150px;
+  opacity: .7;
+  background: url('/assets/images/square2.png') center / cover no-repeat;
+}
+/* End Global */
+
+
+
+/* ---------------------------------- Header ----- */
+.header {
+  padding: 25px 15px;
+}
+
+/* Logo */
+.header .logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header .logo:hover {
+  color: #fff !important;
+}
+
+/* Icone Hamburger */
+.icon-hamburger {
+  width: 30px;
+  height: 13px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-hamburger .item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: tomato;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.icon-hamburger .item-tow {
+  top: 8px;
+}
+
+.icon-hamburger .item-three {
+  top: 16px;
+}
+
+/* Class Active */
+.icon-hamburger.active .item-one {
+  top: 8px;
+  transform: rotate(130deg);
+}
+
+.icon-hamburger.active .item-tow {
+  left: -30px;
+  opacity: 0;
+}
+
+.icon-hamburger.active .item-three {
+  top: 8px;
+  transform: rotate(-130deg);
+}
+
+/* Navigation */
+.header .navigation {
+  min-height: 40px;
+}
+
+.header .navigation .link-item-li {
+  font-size: 16px;
+  padding: 8px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header .navigation .link-item-li:hover {
+  color: #007bff !important;
+}
+
+/* Get Started */
+.header .get-started {
+  margin-left: 10px;
+  padding: 8px 10px;
+  border-radius: 2px;
+  background-color: #007bff;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header .get-started:hover {
+  color: #fff !important;
+  background-color: #007bffdc;
+}
+/* End Header */
+
+
+
+/* ---------------------------------- Container Video ----- */
+.mian-content .container-video {
+  max-width: 700px;
+  height: 450px;
+  margin: 10rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background: url('/assets/images/square1.png') center / cover no-repeat;
+  box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+}
+/* End Container Video */
+
+
+
+/* ---------------------------------- Footer ----- */
+.footer {
+  border-top: 1px solid  #435db5;
+  background: radial-gradient(ellipse at bottom,#292d61 30%,#171941 80%);
+}
+
+.footer .content {
+  padding: 30px 0;
+}
+
+/* Logo Footer */
+.footer .content .logo-footer {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffffcc;
+}
+
+/* Navigation Footer */
+.footer .nav-footer .link-item-foo {
+  color: #ffffffcc;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer .nav-footer .link-item-foo:hover {
+  color: #007bff;
+}
+
+/* Social Media */
+.footer .social-media h4 {
+  color: #ffffffcc;
+  border-left: 3px solid #3F51B5;
+}
+
+.footer .icons .social-item {
+  color: #2196f3ad;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer .icons .social-item:hover {
+  color: #2196f3;
+}
+/* End Footer */
+
+
+
+/* ---------------------------------- Mobile Response ----- */
+@media screen and (max-width: 425px) {
+
+  /* Header Icone Hamburger */
+  .icon-hamburger {
+    display: block !important;
+  }
+
+  /* Header Navigation */
+  .header .navigation {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: auto;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: block !important;
+    background-color: #fff;
+    padding: 10px 20px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+
+  .header .navigation  ul li {
+    display: block !important;
+  }
+
+  .header .navigation .link-item-li {
+    color: #000 !important;
+  }
+
+  .header .navigation.active {
+    top: 80px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Footer */
+  .logo-and-nav {
+    display: block !important;
+  }
+  .footer .content .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .footer .social-media h4 {
+    margin-top: 10px;
+  }
+
+}
+/* End Mobile Response */
