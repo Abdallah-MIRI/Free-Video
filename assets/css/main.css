@@ -318,6 +318,7 @@ body {
 
   /* Main Content */
   .mian-content .container-video {
+    height: 350px;
     margin: 5rem auto;
   }
 
